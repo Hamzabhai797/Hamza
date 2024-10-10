@@ -27,6 +27,11 @@
     color: var(--gray-clr);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .navbar-logo {
     width: 3.2rem;
     height: 3.5rem;
@@ -62,7 +67,7 @@
 }
 
 .hero-section {
-    height: 80vh;
+    min-height: 84vh;
 }
 
 h1 {
@@ -76,4 +81,27 @@ p {
 
 .para {
     max-width: 450px;
+}
+
+.main-txt {
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+img {
+    width: 75%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 650px){
+    h1 {
+        font-size: 2rem;
+    }
+    .image-container{
+        width: 18rem;
+    }
+    .hero-section{
+        min-height: 62vh;
+    }
 }
