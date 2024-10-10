@@ -101,6 +101,7 @@ p {
     /* width: 75%; */
     height: auto;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 .section-container{
@@ -122,6 +123,15 @@ p {
     margin-left: 20px;
     z-index: -1;
     filter: blur(70px);
+}
+
+.hover-card:hover {
+    background: var(--green-clr);
+    /* color: black; */
+}
+
+.hover-card:hover *{
+    color: black !important;
 }
 
 @media screen and (max-width: 650px){
