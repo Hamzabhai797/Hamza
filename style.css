@@ -27,6 +27,14 @@
     color: var(--gray-clr);
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -88,20 +96,45 @@ p {
     font-size: .8rem;
 }
 
-img {
-    width: 75%;
+.about-me {
+    width: 25rem;
+    /* width: 75%; */
     height: auto;
     border-radius: 50%;
 }
 
+.section-container{
+    padding-block: 3rem;
+}
+
+.glow {
+    position: relative;
+}
+.glow::before{
+    content: "";
+    background: var(--green-clr);
+    position: absolute;
+    inset: 5rem;
+    left: 0;
+    border-radius: 50%;
+    height: 200px;
+    width: 420px;
+    margin-left: 20px;
+    z-index: -1;
+    filter: blur(70px);
+}
+
 @media screen and (max-width: 650px){
     h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
     .image-container{
-        width: 18rem;
+        width: 15rem;
     }
     .hero-section{
-        min-height: 62vh;
+        min-height: 55vh;
+    }
+    .about-me{
+        width: 13rem;
     }
 }
