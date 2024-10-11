@@ -134,6 +134,10 @@ p {
     color: black !important;
 }
 
+.mycard {
+    width: 21rem;
+}
+
 @media screen and (max-width: 650px){
     h1 {
         font-size: 1.9rem;
